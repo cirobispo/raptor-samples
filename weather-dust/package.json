@@ -22,7 +22,7 @@
     "raptor-templates": "^1.0.0",
     "raptor-args": "^0.1.12-beta",
     "raptor-taglib-async": "^0.1.0-beta",
-    "raptor-taglib-layout": "^0.1.0-beta",
+    "raptor-taglib-layout": "^0.1.1-beta",
     "browser-refresh-taglib": "^0.1.0-beta",
     "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",
     "raptor-widgets": "^0.2.7-beta",
