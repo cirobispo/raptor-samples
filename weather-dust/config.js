@@ -12,9 +12,9 @@ function parseArgs() {
                 type: 'number',
                 description: 'Port number to listen on'
             },
-            '--mock-data': {
+            '--mock-services': {
                 type: 'boolean',
-                description: 'Enable mock data for services (avoid service calls)'
+                description: 'Enable mock services that return fake data'
             }
         })
         .usage('Usage: $0 server [options]')
@@ -54,13 +54,12 @@ function enableMockServices() {
             }
         }
     });
-
 }
 
 exports.load = function(callback) {
     var args = parseArgs();
 
-    if (args.mockData === true) {
+    if (args.mockServices === true) {
         enableMockServices();
     }
 
