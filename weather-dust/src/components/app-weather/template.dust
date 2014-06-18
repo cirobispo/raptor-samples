@@ -1,4 +1,4 @@
-{@widget class="weather" module=widgetPath}
+{@widget class="weather" module="./widget"}
     {@app-choose-location widgetId="chooseLocation" /}
     
     <progress id="{widget.id}-loading" class="loading">Loading...</progress>
