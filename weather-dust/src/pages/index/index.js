@@ -1,5 +1,4 @@
 var template = require('view-engine').load(require.resolve('./template.dust'));
-var layoutTemplate = require('view-engine').load(require.resolve('../../layouts/default-layout.dust'));
 var weatherService = require('../../services/weather-service');
 
 module.exports = function(req, res) {
@@ -21,7 +20,6 @@ module.exports = function(req, res) {
 
     template
         .stream({
-            layoutTemplate: layoutTemplate,
             weatherDataProvider: weatherDataProvider
         })
         .pipe(res);
