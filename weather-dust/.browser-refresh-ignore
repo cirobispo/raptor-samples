@@ -2,3 +2,4 @@
 /static
 *.rhtml.js
 *.dust.js
+.*
