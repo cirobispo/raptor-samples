@@ -11,6 +11,10 @@ function parseArgs() {
             '--port -p': {
                 type: 'number',
                 description: 'Port number to listen on'
+            },
+            '--mock-data': {
+                type: 'boolean',
+                description: 'Enable mock data for services (avoid service calls)'
             }
         })
         .usage('Usage: $0 server [options]')
@@ -31,9 +35,13 @@ function parseArgs() {
         .parse();  
 }
 
+exports.useMockData = false;
+
 
 exports.load = function(callback) {
     var args = parseArgs();
+
+    exports.useMockData = args.mockData === true;
 
     var configDir = nodePath.join(__dirname, 'config');
     confit(configDir).create(function(err, config) {
