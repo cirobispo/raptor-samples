@@ -1,4 +1,4 @@
-var weatherService = require('../services/weather-service');
+var weatherService = require('../services/weather');
 
 module.exports = function(req, res) {
     var location = req.params.location || req.query.location;

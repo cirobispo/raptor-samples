@@ -1,5 +1,5 @@
 var template = require('raptor-templates').load(require.resolve('./template.rhtml'));
-var weatherService = require('../../services/weather-service');
+var weatherService = require('../../services/weather');
 
 module.exports = function(req, res) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');

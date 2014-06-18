@@ -1,4 +1,4 @@
-var weatherService = require('../../services/weather-service');
+var weatherService = require('../../services/weather');
 var locationWeather = require('../app-location-weather');
 
 function Widget() {

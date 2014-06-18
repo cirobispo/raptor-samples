@@ -1,5 +1,5 @@
 var request = require('request');
-var weatherServiceUtil = require('./weather-service-util');
+var weatherServiceUtil = require('./weather-util');
 
 // var sampleData = {
 //     city: 'Fort Collins',
