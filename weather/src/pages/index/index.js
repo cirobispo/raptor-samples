@@ -14,9 +14,7 @@ module.exports = function(req, res) {
         weatherService.getCurrentWeather({query: location}, callback);
     }
 
-    template
-        .stream({
+    template.render({
             weatherDataProvider: weatherDataProvider
-        })
-        .pipe(res);
+        }, res);
 };
