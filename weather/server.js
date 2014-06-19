@@ -2,6 +2,8 @@ var express = require('express');
 var raptorOptimizer = require('raptor-optimizer');
 var config = require('./config');
 
+console.log('pid: ', process.pid);
+
 // Asynchronously load environment-specific configuration data before starting the app
 config.load(function(err, config) {
     var app = express();
