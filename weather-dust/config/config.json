@@ -4,7 +4,7 @@
         "fileWriter": {
             "url-prefix": "/static",
             "outputDir": "static",
-            "fingerprintsEnabled": false
+            "checksumsEnabled": false
         },
 
         "minify": false,

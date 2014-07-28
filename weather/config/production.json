@@ -1,7 +1,7 @@
 {
     "raptor-optimizer": {
         "fileWriter": {
-            "fingerprintsEnabled": true
+            "checksumsEnabled": true
         },
         "minify": true,
         "bundlingEnabled": true,
