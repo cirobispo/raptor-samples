@@ -17,22 +17,22 @@
   },
   "homepage": "https://github.com/raptorjs3/raptor-samples",
   "dependencies": {
-    "express": "^3.10.5",
-    "raptor-optimizer": "^0.2.56-beta",
-    "raptor-templates": "^1.0.0",
-    "raptor-args": "^0.1.14-beta",
-    "browser-refresh-taglib": "^0.1.0-beta",
+    "async-config": "^1.0.0",
     "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",
-    "raptor-widgets": "^0.2.7-beta",
+    "browser-refresh-taglib": "^0.1.0-beta",
+    "express": "^3.10.5",
     "jquery": "^2.1.1",
+    "less": "^1.7.1",
     "minimatch": "^0.2.14",
-    "confit": "^1.2.0",
+    "raptor-args": "^0.1.14-beta",
+    "raptor-optimizer": "^0.2.56-beta",
     "raptor-renderer": "^0.2.3-beta",
-    "temp-units-conv": "^0.1.1",
-    "request": "^2.36.0",
-    "xml2js": "^0.4.4",
     "raptor-sample-ui-components": "^0.1.0-beta",
-    "less": "^1.7.1"
+    "raptor-templates": "^1.0.0",
+    "raptor-widgets": "^0.2.7-beta",
+    "request": "^2.36.0",
+    "temp-units-conv": "^0.1.1",
+    "xml2js": "^0.4.4"
   },
   "private": true
 }

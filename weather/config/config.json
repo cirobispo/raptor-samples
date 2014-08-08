@@ -1,17 +1,4 @@
 {
     "port": 8080,
-    "raptor-optimizer": {
-        "fileWriter": {
-            "url-prefix": "/static",
-            "outputDir": "static",
-            "fingerprintsEnabled": false
-        },
-
-        "minify": false,
-        "bundlingEnabled": false,
-        "enabledExtensions": ["raptor-logging/browser"],
-        "transforms": [
-            "raptor-optimizer-resolve-css-urls"
-        ]
-    }
+    "raptor-optimizer": "import:./raptor-optimizer.json"
 }

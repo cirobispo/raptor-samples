@@ -1,0 +1,14 @@
+{
+    "fileWriter": {
+        "url-prefix": "/static",
+        "outputDir": "path:../static",
+        "fingerprintsEnabled": false
+    },
+
+    "minify": false,
+    "bundlingEnabled": false,
+    "enabledExtensions": ["raptor-logging/browser"],
+    "transforms": [
+        "raptor-optimizer-resolve-css-urls"
+    ]
+}

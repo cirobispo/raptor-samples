@@ -1,0 +1,17 @@
+{
+    "fileWriter": {
+        "fingerprintsEnabled": true
+    },
+    "minify": true,
+    "bundlingEnabled": true,
+    "enabledExtensions": [],
+    "bundles": [
+        {
+            "name": "jquery",
+            "dependencies": [
+                "require jquery"
+            ]
+        }
+    ],
+    "cacheProfile": "production"
+}
