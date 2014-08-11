@@ -1,5 +1,8 @@
 module.exports = function(app) {
+    // JSON API end points:
     app.get('/api/weather/:location', require('./src/api/weather'));
-    app.get('/weather/:location', require('./src/pages/index'));
-    app.get('/', require('./src/pages/index'));
+
+    // HTML end points:
+    app.get('/weather/:location', require('./src/pages/home'));
+    app.get('/', require('./src/pages/home'));
 };

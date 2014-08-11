@@ -1,5 +1,5 @@
-Sample App: Weather (Raptor Templates)
-======================================
+Sample App: Weather
+===================
 
 This sample app utilizes the following RaptorJS modules:
 
@@ -28,9 +28,13 @@ npm install browser-refresh -g
 browser-refresh
 ```
 
-# Additional Details
+Finally, to start the application to use mock services to avoid making HTTP calls to [openweathermap.org](http://openweathermap.org/) then you can append the `--mock-services` argument to the command line:
 
-## Project Structure
+```
+node server --mock-services
+```
+
+# Project Structure
 
 ```bash
 ./
@@ -46,7 +50,7 @@ browser-refresh
 └── src/ # Source code for the application
     ├── api/ # API endpoint implementations
     │   └── weather.js
-    ├── components/ # Components/custom tags
+    ├── components/ # UI components/custom tags
     │   ├── app-choose-location/
     │   │   ├── optimizer.json # Client-side dependencies
     │   │   ├── renderer.js # HTML renderer
@@ -55,16 +59,25 @@ browser-refresh
     │   │   └── widget.js # Client-side behavior
     │   ├── app-current-conditions/
     │   │   └── ...
+    │   ├── app-footer/
+    │   │   └── ...
+    │   ├── app-header/
+    │   │   └── ...    
     │   ├── app-location-weather/
+    │   │   └── ...
+    │   ├── app-nav/
     │   │   └── ...
     │   └── app-weather/
     │       └── ...
     ├── global-style/ # Module to control the style of all pages
     │   └── ...
     ├── layouts/ # Layout templates
-    │   └── default-layout.rhtml
+    │   └── default/
+    │       ├── optimizer.json # Client-side dependencies
+    │       ├── style.css # Default layout styling
+    │       └── template.rhtml # Layout template
     ├── pages/ # Top-level page modules
-    │   └── index/ # The main index page
+    │   └── home/ # The main index page
     │       ├── index.js # Page middleware
     │       ├── optimizer.json # Page dependencies
     │       ├── style.less # Page-specific style
@@ -80,13 +93,60 @@ browser-refresh
             └── optimizer.json # Package up Bootstrap
 ```
 
-## Resource Optimization
+# UI Components
 
-Unless the `NODE_ENV` environment variable is set to `production`, the application will start in development mode. In development mode, resource optimizations such as minification, concatenation and checksummed URLs are disabled to be more developer-friendly. Try starting the application using the following command to see what it looks like in the optimized production mode:
+The UI for the weather application is broken down into various UI components to ease maintainability and improve reusability. Each UI component is a self-contained directory/module that includes code to perform the following tasks:
+
+* Render the output HTML (i.e. `renderer.js` and `template.rhtml`)
+* Styling (i.e. `style.css`)
+* Client-side behavior (i.e. `widget.js`)
+* Declarative client-side dependencies (i.e. `optimizer.json`)
+* Custom tag definition (i.e. `raptor-tag.json`)
+* ...plus any other required files/assets
+
+For this sample app, we chose the following decomposition of UI components:
+
+## app-choose-location
+
+Renders the form that allows the user to choose a location. When a location is selected the client-side widget emits a `locationSelected` event with the following properties:
+
+* __query:__ The query that the user entered into the input field
+
+## app-current-conditions
+
+Renders the current conditions (high, low, humidity, etc.) for a given location.
+
+## app-footer
+
+Renders the global footer at the bottom of the page.
+
+## app-header
+
+Renders the global header at the top of the page.
+
+## app-header
+
+Renders the global header at the top of the page.
+
+## app-location-weather
+
+Renders the weather for a location (which may include current conditions, 10 day forecast, maps, etc.).
+
+## app-nav
+
+Renders the top navigation.
+
+## app-weather
+
+Renders the UI for the weather application that goes into the body of the page. The widget for this UI component orchestrates all of the events for the nested components and it controls the web browser's location bar using the [HTML 5 history API](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history) (e.g. ` window.history.pushState(...)`). This widget adds a `locationSelected` listener for the nested `app-choose-location` widget. When a new location is selected, the widget for the `app-weather` UI component initiates a service call using the `src/services/weather` module to retrieve the weather for the selected location. When the weather data comes back for the entered location, it is used to [re-]render the `app-location-weather` component.
+
+# Client-side Resource Optimization
+
+Unless the `NODE_ENV` environment variable is set to `production`, the application will start in development mode. In development mode, resource optimizations such as minification, concatenation and fingerprinted URLs are disabled to be more developer-friendly. Try starting the application using the following command to see what it looks like in the optimized production mode:
 
 ```
 env NODE_ENV=production node server
 ```
 
-Now navigate back to [http://localhost:8080/](http://localhost:8080/) and you should see less `<script>` and `<link>` tags (as a result of resource aggregation) and all source code should be minified.
+Now navigate back to [http://localhost:8080/](http://localhost:8080/) and you should see less `<script>` and `<link>` tags (as a result of resource concatenation) and all source code should be minified.
 

@@ -2,8 +2,12 @@
     "dependencies": [
         "require jquery",
         "../../global-style",
-        "style.less",
         "../../components/app-weather",
+        "../../components/app-header",
+        "../../components/app-nav",
+        "../../components/app-footer",
+        "../../layouts/default",
+        "style.css",
         "require raptor-sample-ui-components"
     ]
 }

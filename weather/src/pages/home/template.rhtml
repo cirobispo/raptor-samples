@@ -1,0 +1,15 @@
+<optimizer-page package-path="./optimizer.json" />
+
+<layout-use template="../../layouts/default/template.rhtml" html-class-name="bg-img-01">
+    <layout-put into="title" value="Home"/>
+    <layout-put into="body">
+        <div>
+            <h2>Weather Forecast</h2>
+
+            <async-fragment data-provider="${data.weatherDataProvider}" var="weatherData">
+                <app-weather weather-data="weatherData"/>
+            </async-fragment>
+        </div>
+        
+    </layout-put>
+</layout-use>
