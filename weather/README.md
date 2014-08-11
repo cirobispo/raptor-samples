@@ -5,7 +5,7 @@ This sample app utilizes the following RaptorJS modules:
 
 * [raptor-optimizer](https://github.com/raptorjs3/raptor-optimizer): Used to generate optimized JavaScript and CSS bundles and generates the HTML markup to include them on the page.
 * [raptor-templates](https://github.com/raptorjs3/raptor-templates): HTML-based templating engine used to render pages and UI components on both the server.
-* [async-config](https://github.com/raptorjs3/raptor-args): Used to load environment-specific configuration required to configure the app.
+* [async-config](https://github.com/patrick-steele-idem/async-config): Used to load environment-specific configuration required to configure the app.
 * [raptor-args](https://github.com/raptorjs3/raptor-args): Used to parse command-line arguments.
 * [raptor-widgets](https://github.com/raptorjs3/raptor-widgets): Provides automatic binding of client-side behavior to UI components rendered on either the server or the client.
 * [raptor-renderer](https://github.com/raptorjs3/raptor-renderer): A module for invoking an HTML renderer function and injecting the resulting HTML into the DOM with automatic binding of client-side behavior.
