@@ -95,9 +95,9 @@ node server --mock-services
 
 # UI Components
 
-The UI for the weather application is broken down into various UI components to ease maintainability and improve reusability. Each UI component is a self-contained directory/module that includes code to perform the following tasks:
+The UI for the weather application is broken down into various UI components to ease maintainability and improve reusability. Each UI component is a self-contained directory/module that includes code to provide for the following:
 
-* Render the output HTML (i.e. `renderer.js` and `template.rhtml`)
+* Rendering HTML (i.e. `renderer.js` and `template.rhtml`)
 * Styling (i.e. `style.css`)
 * Client-side behavior (i.e. `widget.js`)
 * Declarative client-side dependencies (i.e. `optimizer.json`)
