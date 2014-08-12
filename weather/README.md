@@ -124,10 +124,6 @@ Renders the global footer at the bottom of the page.
 
 Renders the global header at the top of the page.
 
-## app-header
-
-Renders the global header at the top of the page.
-
 ## app-location-weather
 
 Renders the weather for a location (which may include current conditions, 10 day forecast, maps, etc.).
