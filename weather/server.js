@@ -1,5 +1,6 @@
 var express = require('express');
-var raptorOptimizer = require('raptor-optimizer');
+var compression = require('compression');
+var serveStatic = require('serve-static');
 
 require('./config').onConfigured(function(err, config) {
     if (err) {
@@ -10,8 +11,8 @@ require('./config').onConfigured(function(err, config) {
 
     var port = config.port;
 
-    app.use(express.compress());
-    app.use('/static', express.static(__dirname + '/static'));
+    app.use(compression()); // Enable gzip compression for all HTTP responses
+    app.use('/static', serveStatic(__dirname + '/static'));
 
     require('./routes')(app);
 
