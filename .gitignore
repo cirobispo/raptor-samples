@@ -8,3 +8,7 @@ node_modules
 .DS_Store
 coverage
 *.rhtml.js
+*.dust.js
+.cache/
+static/
+build/

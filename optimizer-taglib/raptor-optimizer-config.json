@@ -1,0 +1,27 @@
+{
+
+    "plugins": [
+        "raptor-optimizer-less"
+    ],
+    "fileWriter": {
+        "outputDir": "static",
+        "fingerprintsEnabled": true
+    },
+    "minify": true,
+    "resolveCssUrls": true,
+    "bundlingEnabled": true,
+    "bundles": [
+        {
+            "name": "jquery",
+            "dependencies": [
+                "require: jquery"
+            ]
+        },
+        {
+            "name": "math",
+            "dependencies": [
+                "require: ./add"
+            ]
+        }
+    ]
+}
