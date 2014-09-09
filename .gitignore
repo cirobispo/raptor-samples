@@ -9,6 +9,7 @@ node_modules
 coverage
 *.rhtml.js
 *.dust.js
+*.hbs.js
 .cache/
 static/
 build/

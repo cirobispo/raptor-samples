@@ -1,0 +1,17 @@
+{
+
+    "plugins": [
+        "raptor-optimizer-rhtml",
+        "raptor-optimizer-dust",
+        "raptor-optimizer-handlebars"
+    ],
+    "fileWriter": {
+        "outputDir": "static",
+        "fingerprintsEnabled": true
+    },
+    "minify": false,
+    "resolveCssUrls": true,
+    "bundlingEnabled": true,
+    "bundles": [
+    ]
+}
