@@ -1,5 +1,5 @@
-var raptorTemplate = require('raptor-templates')
-    .load(require.resolve('./template.rhtml'));
+var raptorTemplate = require('marko')
+    .load(require.resolve('./template.marko'));
 
 exports.render = function renderRaptor(callback) {
     raptorTemplate.render(

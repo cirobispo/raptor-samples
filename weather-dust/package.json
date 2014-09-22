@@ -1,7 +1,7 @@
 {
   "name": "weather-dust",
   "version": "0.0.0",
-  "description": "Sample Express-based server app that integrates various RaptorJS modules (including raptor-templates, raptor-optimizer and raptor-widgets)",
+  "description": "Sample Express-based server app that integrates various RaptorJS modules (including marko, optimizer and marko-widgets)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,14 +18,14 @@
   "homepage": "https://github.com/raptorjs3/raptor-samples",
   "dependencies": {
     "express": "^3.10.5",
-    "raptor-optimizer": "^0.2.33-beta",
-    "raptor-templates": "^1.0.0",
+    "optimizer": "^0.2.33-beta",
+    "marko": "^1.0.0",
     "raptor-args": "^0.1.12-beta",
-    "raptor-taglib-async": "^0.1.0-beta",
-    "raptor-taglib-layout": "^0.1.2-beta",
+    "marko-async": "^0.1.0-beta",
+    "marko-layout": "^0.1.2-beta",
     "browser-refresh-taglib": "^0.1.0-beta",
     "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",
-    "raptor-widgets": "^0.2.7-beta",
+    "marko-widgets": "^0.2.7-beta",
     "jquery": "^2.1.0",
     "minimatch": "^0.2.14",
     "confit": "^1.2.0",

@@ -1,5 +1,5 @@
 var express = require('express');
-var indexTemplate = require('raptor-templates').load(require.resolve('./index.rhtml'));
+var indexTemplate = require('marko').load(require.resolve('./index.marko'));
 var app = express();
 var port = 8080;
 

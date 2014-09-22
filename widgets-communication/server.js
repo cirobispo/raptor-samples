@@ -1,10 +1,10 @@
 var express = require('express');
-// var raptorOptimizer = require('raptor-optimizer');
+// var optimizer = require('optimizer');
 var port = 8080;
 var serveStatic = require('serve-static');
 
 
-require('raptor-optimizer').configure({
+require('optimizer').configure({
     bundlingEnabled: false
 });
 

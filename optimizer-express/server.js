@@ -2,22 +2,22 @@ var express = require('express');
 var compression = require('compression');
 var serveStatic = require('serve-static');
 var dust = require('dustjs-linkedin');
-var raptorTemplates = require('raptor-templates');
+var marko = require('marko');
 var viewEngine = require('view-engine');
 
 // Configure the RaptorJS Optimizer
-require('raptor-optimizer').configure({
+require('optimizer').configure({
     plugins: [
-        'raptor-optimizer-rhtml',
-        'raptor-optimizer-dust',
-        'raptor-optimizer-less'
+        'optimizer-marko',
+        'optimizer-dust',
+        'optimizer-less'
     ]
 });
 
 viewEngine.register('dust', require('view-engine-dust'), { dust: dust });
 
 // Enable the helpers for Dust
-require('raptor-optimizer/dust').registerHelpers(dust);
+require('optimizer/dust').registerHelpers(dust);
 
 
 var app = express();

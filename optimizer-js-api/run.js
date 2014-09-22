@@ -1,10 +1,10 @@
-var raptorOptimizer = require('raptor-optimizer');
+var optimizer = require('optimizer');
 var fs = require('fs');
 var mustache = require('mustache');
 
-raptorOptimizer.configure({
+optimizer.configure({
     "plugins": [
-        "raptor-optimizer-less"
+        "optimizer-less"
     ],
     "fileWriter": {
         "outputDir": "static",
@@ -30,7 +30,7 @@ raptorOptimizer.configure({
 });
 
 
-raptorOptimizer.optimizePage({
+optimizer.optimizePage({
         name: 'my-page',
         dependencies: [
             "style.less",

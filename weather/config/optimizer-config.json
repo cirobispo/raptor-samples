@@ -1,0 +1,30 @@
+{
+    "fileWriter": {
+        "url-prefix": "/static",
+        "outputDir": "path:../static",
+        "fingerprintsEnabled": true
+    },
+    "plugins": [
+        {
+            "plugin": "optimizer-marko",
+            "config": {}
+        },
+        {
+            "plugin": "optimizer-less",
+            "config": {}
+        }
+    ],
+    "bundles": [
+        {
+            "name": "jquery",
+            "dependencies": [
+                "require jquery"
+            ]
+        }
+    ],
+    "enabledExtensions": ["production"],
+    "minify": true,
+    "resolveCssUrls": true,
+    "bundlingEnabled": true,
+    "cacheProfile": "production"
+}

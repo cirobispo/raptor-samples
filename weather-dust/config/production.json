@@ -1,5 +1,5 @@
 {
-    "raptor-optimizer": {
+    "optimizer": {
         "fileWriter": {
             "fingerprintsEnabled": true
         },

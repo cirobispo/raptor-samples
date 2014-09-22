@@ -6,7 +6,7 @@ function configureApp(config, callback) {
         require('./mock-services').enable();    
     }
     
-    require('raptor-optimizer').configure(config['raptor-optimizer']);
+    require('optimizer').configure(config['optimizer']);
     callback();
 }
 

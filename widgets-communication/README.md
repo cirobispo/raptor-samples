@@ -1,11 +1,11 @@
 Sample App: Widgets (binding behavior)
 ======================================
 
-This sample app utilizes the following RaptorJS modules to demonstrate how to bind behavior to rendered UI components using the [raptor-widgets](https://github.com/raptorjs3/raptor-optimizer) module:
+This sample app utilizes the following RaptorJS modules to demonstrate how to bind behavior to rendered UI components using the [marko-widgets](https://github.com/raptorjs3/optimizer) module:
 
-* [raptor-widgets](https://github.com/raptorjs3/raptor-widgets)
-* [raptor-templates](https://github.com/raptorjs3/raptor-templates)
-* [raptor-optimizer](https://github.com/raptorjs3/raptor-optimizer)
+* [marko-widgets](https://github.com/raptorjs3/marko-widgets)
+* [marko](https://github.com/raptorjs3/marko)
+* [optimizer](https://github.com/raptorjs3/optimizer)
 
 # Installation
 
@@ -30,6 +30,6 @@ Navigate to [http://localhost:8080/](http://localhost:8080/) to see your applica
         └── index/ # The main index page
             ├── index.js # Page middleware
             ├── optimizer.json # Page dependencies
-            ├── template.rhtml # Page template
+            ├── template.marko # Page template
             └── widget.js # Client-side behavior
 ```

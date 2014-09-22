@@ -1,9 +1,9 @@
 {
 
     "plugins": [
-        "raptor-optimizer-rhtml",
-        "raptor-optimizer-dust",
-        "raptor-optimizer-handlebars"
+        "optimizer-marko",
+        "optimizer-dust",
+        "optimizer-handlebars"
     ],
     "fileWriter": {
         "outputDir": "static",

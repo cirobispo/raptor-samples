@@ -1,0 +1,8 @@
+<ul if="empty(data.error)">
+    <li for="result in data.results">
+        $!{result}
+    </li>
+</ul>
+<div else>
+    An error has occurred: $data.error
+</div>

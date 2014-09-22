@@ -1,4 +1,4 @@
 {
     "port": 8080,
-    "raptor-optimizer": "import:./raptor-optimizer.json"
+    "optimizer": "import:./optimizer-config.json"
 }

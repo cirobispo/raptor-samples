@@ -15,7 +15,7 @@ echo
 read -p "Press any key to continue... " -n1 -s
 
 # Package up the program for the browser
-raptor-optimizer --main main.js --inject-into my-page.html --config raptor-optimizer-config.json
+optimizer --main main.js --inject-into my-page.html --config optimizer-config.json
 
 echo
 echo "Open my-page.html to see the output of the templates rendered in the browser".

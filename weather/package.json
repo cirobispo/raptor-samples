@@ -1,7 +1,7 @@
 {
   "name": "weather",
   "version": "0.0.0",
-  "description": "Sample Express-based server app that integrates various RaptorJS modules (including raptor-templates, raptor-optimizer and raptor-widgets)",
+  "description": "Sample Express-based server app that integrates various RaptorJS modules (including marko, optimizer and marko-widgets)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,13 +26,13 @@
     "less": "^1.7.1",
     "minimatch": "^0.2.14",
     "raptor-args": "^0.1.14-beta",
-    "raptor-optimizer": "^0.2.56-beta",
-    "raptor-optimizer-less": "^0.1.11-beta",
-    "raptor-optimizer-rhtml": "^0.1.11-beta",
+    "optimizer": "^0.2.56-beta",
+    "optimizer-less": "^0.1.11-beta",
+    "optimizer-marko": "^0.1.11-beta",
     "raptor-renderer": "^0.2.3-beta",
     "raptor-sample-ui-components": "^0.1.0-beta",
-    "raptor-templates": "^1.0.0",
-    "raptor-widgets": "^0.2.7-beta",
+    "marko": "^1.0.0",
+    "marko-widgets": "^0.2.7-beta",
     "request": "^2.36.0",
     "serve-static": "^1.5.1",
     "temp-units-conv": "^0.1.1",

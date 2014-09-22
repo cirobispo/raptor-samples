@@ -3,11 +3,11 @@ Sample App: Weather
 
 This sample app utilizes the following RaptorJS modules:
 
-* [raptor-optimizer](https://github.com/raptorjs3/raptor-optimizer): Used to generate optimized JavaScript and CSS bundles and generates the HTML markup to include them on the page.
-* [raptor-templates](https://github.com/raptorjs3/raptor-templates): HTML-based templating engine used to render pages and UI components on both the server.
+* [optimizer](https://github.com/raptorjs3/optimizer): Used to generate optimized JavaScript and CSS bundles and generates the HTML markup to include them on the page.
+* [marko](https://github.com/raptorjs3/marko): HTML-based templating engine used to render pages and UI components on both the server.
 * [async-config](https://github.com/patrick-steele-idem/async-config): Used to load environment-specific configuration required to configure the app.
 * [raptor-args](https://github.com/raptorjs3/raptor-args): Used to parse command-line arguments.
-* [raptor-widgets](https://github.com/raptorjs3/raptor-widgets): Provides automatic binding of client-side behavior to UI components rendered on either the server or the client.
+* [marko-widgets](https://github.com/raptorjs3/marko-widgets): Provides automatic binding of client-side behavior to UI components rendered on either the server or the client.
 * [raptor-renderer](https://github.com/raptorjs3/raptor-renderer): A module for invoking an HTML renderer function and injecting the resulting HTML into the DOM with automatic binding of client-side behavior.
 
 # Installation
@@ -40,8 +40,8 @@ node server --mock-services
 ./
 ├── config/ # Configuration files
 │   ├── config.json # Configuration defaults
-│   ├── raptor-optimizer.json # Default configuration for the raptor-optimizer
-│   └── raptor-optimizer-production.json # Production configuration for the raptor-optimizer
+│   ├── optimizer.json # Default configuration for the optimizer
+│   └── optimizer-production.json # Production configuration for the optimizer
 ├── config.js # Helper module for loading the configuration
 ├── mock-services.js # Helper module to use mock service modules
 ├── package.json # npm metadata
@@ -55,7 +55,7 @@ node server --mock-services
     │   │   ├── optimizer.json # Client-side dependencies
     │   │   ├── renderer.js # HTML renderer
     │   │   ├── style.css # UI Component styling
-    │   │   ├── template.rhtml # HTML template
+    │   │   ├── template.marko # HTML template
     │   │   └── widget.js # Client-side behavior
     │   ├── app-current-conditions/
     │   │   └── ...
@@ -75,14 +75,14 @@ node server --mock-services
     │   └── default/
     │       ├── optimizer.json # Client-side dependencies
     │       ├── style.css # Default layout styling
-    │       └── template.rhtml # Layout template
+    │       └── template.marko # Layout template
     ├── pages/ # Top-level page modules
     │   └── home/ # The main index page
     │       ├── index.js # Page middleware
     │       ├── optimizer.json # Page dependencies
     │       ├── style.less # Page-specific style
-    │       └── template.rhtml # Page template
-    ├── raptor-taglib.json # raptor-templates taglib definition
+    │       └── template.marko # Page template
+    ├── marko-taglib.json # marko taglib definition
     ├── services/
     │   ├── package.json # Browser override configured in package.json
     │   ├── weather-service-browser.js # Browser-side version of the weather-service module
@@ -97,11 +97,11 @@ node server --mock-services
 
 The UI for the weather application is broken down into various UI components to ease maintainability and improve reusability. Each UI component is a self-contained directory/module that includes code to provide for the following:
 
-* Rendering HTML (i.e. `renderer.js` and `template.rhtml`)
+* Rendering HTML (i.e. `renderer.js` and `template.marko`)
 * Styling (i.e. `style.css`)
 * Client-side behavior (i.e. `widget.js`)
 * Declarative client-side dependencies (i.e. `optimizer.json`)
-* Custom tag definition (i.e. `raptor-tag.json`)
+* Custom tag definition (i.e. `marko-tag.json`)
 * ...plus any other required files/assets
 
 For this sample app, we chose the following decomposition of UI components:

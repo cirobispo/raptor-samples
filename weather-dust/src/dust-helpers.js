@@ -2,9 +2,9 @@ var dust = require('view-engine-dust').dust;
 var raptorDust = require('raptor-dust');
 
 exports.registerHelpers = function() {
-    require('raptor-taglib-async/dust').registerHelpers(dust);
-    require('raptor-taglib-layout/dust').registerHelpers(dust);
-    require('raptor-widgets/dust').registerHelpers(dust);
+    require('marko-async/dust').registerHelpers(dust);
+    require('marko-layout/dust').registerHelpers(dust);
+    require('marko-widgets/dust').registerHelpers(dust);
     require('raptor-sample-ui-components/dust').registerHelpers(dust);
     raptorDust.registerHelpers({
         'app-weather': require('./components/app-weather/renderer'),

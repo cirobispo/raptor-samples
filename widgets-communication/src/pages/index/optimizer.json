@@ -2,7 +2,7 @@
     "dependencies": [
         "require jquery",
         "../../global-style",
-        "require raptor-widgets",
+        "require marko-widgets",
         "require ./widget",
         "require raptor-sample-ui-components"
     ]

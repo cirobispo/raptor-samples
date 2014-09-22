@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>raptor-templates-express-app</title>
+    <title>marko-express-app</title>
     <link href="/static/reset.css" rel="stylesheet" type="text/css" media="all">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="/static/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-    <app-header title="raptor-templates-express-app"/>
+    <app-header title="marko-express-app"/>
     
     <p>
         <app-hello name="${data.name}"/> You have $data.count new messages!
     </p>
 
-    <ul c-if="notEmpty(data.colors)">
-        <li style="color: $color" c-for="color in data.colors">
+    <ul if="notEmpty(data.colors)">
+        <li style="color: $color" for="color in data.colors">
             $color
         </li>
     </ul>
-    <div c-else>
+    <div else>
         No colors!
     </div>
     
@@ -37,7 +37,7 @@
         <app-button label="Link" variant="link"/>
     </p>
 
-    <c-include template="./footer.rhtml"/>
+    <include template="./footer.marko"/>
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>

@@ -1,6 +1,6 @@
-var template = require('raptor-templates').load('my-page.rhtml');
+var template = require('marko').load('my-page.marko');
 
-require('raptor-optimizer').configure('raptor-optimizer-config.json');
+require('optimizer').configure('optimizer-config.json');
 
 
 var out = require('fs').createWriteStream('my-page.html', 'utf8');

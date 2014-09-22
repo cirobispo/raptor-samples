@@ -1,6 +1,6 @@
 {
     "port": 8081,
-    "raptor-optimizer": {
+    "optimizer": {
         "fileWriter": {
             "url-prefix": "/static",
             "outputDir": "static",
@@ -10,7 +10,7 @@
         "minify": false,
         "bundlingEnabled": false,
         "transforms": [
-            "raptor-optimizer-resolve-css-urls"
+            "optimizer-resolve-css-urls"
         ]
     },
     "view-engine": {
@@ -19,7 +19,7 @@
                 "extensions": ["dust"]
             },
             "view-engine-raptor": {
-                "extensions": ["rhtml"]
+                "extensions": ["marko"]
             }
         }    
     }

@@ -1,7 +1,7 @@
 <table>
     <tr>
         <td>
-            <img src="$data.iconUrl" alt="$data.description" c-if="data.iconUrl">
+            <img src="$data.iconUrl" alt="$data.description" if="data.iconUrl">
         </td>
         <td>
             <span class="current-temp">$data.temp</span>
@@ -35,7 +35,7 @@
             <td>Humidity</td>
             <td>$data.humidity</td>
         </tr>
-        <tr c-if="data.precipitationType">
+        <tr if="data.precipitationType">
             <td>$data.precipitationType</td>
             <td>$data.precipitationRate</td>
         </tr>

@@ -11,7 +11,7 @@
   "dependencies": {
     "jquery": "^2.1.1",
     "mustache": "^0.8.2",
-    "raptor-optimizer": "^1.0.1-beta",
-    "raptor-optimizer-less": "^1.0.1-beta"
+    "optimizer": "^1.0.1-beta",
+    "optimizer-less": "^1.0.1-beta"
   }
 }

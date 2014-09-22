@@ -5,10 +5,10 @@ This sample app utilizes the following RaptorJS modules:
 
 * [dustjs-linkedin](https://github.com/linkedin/dustjs)
 * [raptor-args](https://github.com/raptorjs3/raptor-args)
-* [raptor-optimizer](https://github.com/raptorjs3/raptor-optimizer)
+* [optimizer](https://github.com/raptorjs3/optimizer)
 * [raptor-renderer](https://github.com/raptorjs3/raptor-renderer)
 * [raptor-sample-ui-components](https://github.com/raptorjs3/raptor-sample-ui-components)
-* [raptor-widgets](https://github.com/raptorjs3/raptor-widgets)
+* [marko-widgets](https://github.com/raptorjs3/marko-widgets)
 * [view-engine](https://github.com/patrick-steele-idem/view-engine)
 * [view-engine-dust](https://github.com/patrick-steele-idem/view-engine-dust)
 
@@ -69,7 +69,7 @@ browser-refresh
     │       ├── optimizer.json # Page dependencies
     │       ├── style.less # Page-specific style
     │       └── template.dust # Page template
-    ├── raptor-taglib.json # raptor-templates taglib definition
+    ├── marko-taglib.json # marko taglib definition
     ├── services/
     │   ├── package.json # Browser override configured in package.json
     │   ├── weather-service-browser.js # Browser-side version of the weather-service module
@@ -84,17 +84,17 @@ browser-refresh
 
 ## Dust Helpers
 
-Unlike with Raptor Templates, Dust requires that all helpers be explicitly registered before any templates are rendered (Raptor Templates automatically discovers taglibs based on a templates location on disk). The registration of helpers happens in the following modules:
+Unlike with Marko, Dust requires that all helpers be explicitly registered before any templates are rendered (Marko automatically discovers taglibs based on a templates location on disk). The registration of helpers happens in the following modules:
 
 * [src/dust-helpers.js](src/dust-helpers.js) (client/server helpers)
 * [src/dust-helpers-server.js](src/dust-helpers-server.js) (server-only helpers)
 
 Those modules register Dust helpers provided by the following modules:
 
-* [raptor-optimizer](https://github.com/raptorjs3/raptor-optimizer) (server-side only)
-* [raptor-taglib-async](https://github.com/raptorjs3/raptor-taglib-async)
-* [raptor-taglib-layout](https://github.com/raptorjs3/raptor-taglib-layout)
-* [raptor-widgets](https://github.com/raptorjs3/raptor-widgets)
+* [optimizer](https://github.com/raptorjs3/optimizer) (server-side only)
+* [marko-async](https://github.com/raptorjs3/marko-async)
+* [marko-layout](https://github.com/raptorjs3/marko-layout)
+* [marko-widgets](https://github.com/raptorjs3/marko-widgets)
 * [raptor-sample-ui-components](https://github.com/raptorjs3/raptor-sample-ui-components)
 
 In addition, helpers are also registered for all of the application's UI components using code similar to the following:
@@ -123,7 +123,7 @@ Similarly, a button UI component can be embedded using the following Dust code:
 {@sample-button type="submit" label="Go" id="go" variant="primary" /}
 ```
 
-The [sample-button](https://github.com/raptorjs3/raptor-sample-ui-components/tree/master/components/sample-button) UI component happens to use Raptor Templates to produce its HTML output, but since UI components encapsulate their rendering logic that does not matter.
+The [sample-button](https://github.com/raptorjs3/raptor-sample-ui-components/tree/master/components/sample-button) UI component happens to use Marko to produce its HTML output, but since UI components encapsulate their rendering logic that does not matter.
 
 ## Resource Optimization
 

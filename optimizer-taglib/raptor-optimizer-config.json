@@ -1,7 +1,7 @@
 {
 
     "plugins": [
-        "raptor-optimizer-less"
+        "optimizer-less"
     ],
     "fileWriter": {
         "outputDir": "static",

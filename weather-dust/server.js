@@ -1,5 +1,5 @@
 var express = require('express');
-var raptorOptimizer = require('raptor-optimizer');
+var optimizer = require('optimizer');
 var viewEngine = require('view-engine');
 var config = require('./config');
 
@@ -9,7 +9,7 @@ console.log('pid: ', process.pid);
 config.load(function(err, config) {
     var app = express();
 
-    raptorOptimizer.configure(config.get('raptor-optimizer'));
+    optimizer.configure(config.get('optimizer'));
     viewEngine.configure(config.get('view-engine'));
 
     require('./src/dust-helpers').registerHelpers();
