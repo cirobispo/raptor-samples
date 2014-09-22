@@ -1,9 +1,8 @@
 var viewEngine = require('view-engine');
-var viewEngineDust = require('view-engine-dust');
-var dust = viewEngineDust.dust;
+var dust = require('dustjs-linkedin');
 
-viewEngine.register('dust', viewEngineDust);
-viewEngine.register('marko', require('view-engine-raptor'));
+viewEngine.register('dust', require('view-engine-dust'), { dust: dust });
+viewEngine.register('marko', require('view-engine-marko'));
 
 require('../../dust-helpers').registerHelpers(dust);
 require('marko-widgets').initAllWidgets();

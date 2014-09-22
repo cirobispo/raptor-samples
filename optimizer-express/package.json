@@ -18,7 +18,7 @@
     "optimizer-marko": "^1.0.1",
     "marko": "^1.1.25",
     "serve-static": "^1.6.1",
-    "view-engine": "^0.1.9",
-    "view-engine-dust": "^0.1.7"
+    "view-engine": "^1.0.0",
+    "view-engine-dust": "^1.0.0"
   }
 }

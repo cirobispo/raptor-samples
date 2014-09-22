@@ -16,10 +16,10 @@
     "optimizer-handlebars": "^1.0.0",
     "optimizer-marko": "^1.0.1",
     "marko": "^1.1.25",
-    "view-engine": "^0.1.9",
-    "view-engine-dust": "^0.1.7",
+    "view-engine": "^1.0.0",
+    "view-engine-dust": "^1.0.0",
     "view-engine-handlebars": "^1.0.0",
-    "view-engine-raptor": "^0.1.5"
+    "view-engine-marko": "^1.0.0"
   },
   "browser": {
     "./display-results.js": "./display-results-browser.js"

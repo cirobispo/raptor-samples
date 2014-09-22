@@ -18,9 +18,9 @@
             "view-engine-dust": {
                 "extensions": ["dust"]
             },
-            "view-engine-raptor": {
+            "view-engine-marko": {
                 "extensions": ["marko"]
             }
-        }    
+        }
     }
 }
