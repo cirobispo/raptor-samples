@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/raptorjs3/samples",
   "dependencies": {
-    "express": "^3.5.1",
-    "marko": "^1.0.0"
+    "express": "^4.9.4",
+    "marko": "^1.0.0",
+    "serve-static": "^1.6.2"
   }
 }

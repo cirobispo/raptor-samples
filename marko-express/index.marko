@@ -10,7 +10,7 @@
 </head>
 <body>
     <app-header title="marko-express"/>
-    
+
     <p>
         <app-hello name="${data.name}"/> You have $data.count new messages!
     </p>
@@ -23,7 +23,7 @@
     <div else>
         No colors!
     </div>
-    
+
     <p>
         <app-button label="Default"/>
         <app-button label="Primary" variant="primary" size="lg"/>
@@ -39,6 +39,7 @@
 
     <include template="./footer.marko"/>
 
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
