@@ -1,5 +1,5 @@
 {
-  "name": "marko-express-app",
+  "name": "marko-express",
   "version": "0.0.0",
   "description": "Sample Express-based server app that integrates the marko module for rendering a view",
   "main": "server.js",
