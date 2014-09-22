@@ -18,13 +18,13 @@
   "homepage": "https://github.com/raptorjs3/raptor-samples",
   "dependencies": {
     "express": "^4.4.1",
-    "optimizer": "^0.2.50-beta",
+    "optimizer": "^0.2.50",
     "serve-static": "^1.2.1",
-    "marko": "^1.1.0-beta",
-    "marko-widgets": "^0.2.15-beta",
+    "marko": "^1.1.0",
+    "marko-widgets": "^0.2.15",
     "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",
-    "raptor-sample-ui-components": "^0.1.1-beta",
-    "browser-refresh-taglib": "0.1.0-beta",
+    "raptor-sample-ui-components": "^0.1.1",
+    "browser-refresh-taglib": "0.1.0",
     "jquery": "^2.1.1"
   }
 }

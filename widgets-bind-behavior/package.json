@@ -18,9 +18,9 @@
   "homepage": "https://github.com/raptorjs3/raptor-samples",
   "dependencies": {
     "express": "^4.4.1",
-    "optimizer": "^0.2.50-beta",
+    "optimizer": "^0.2.50",
     "serve-static": "^1.2.1",
-    "marko": "^1.1.0-beta",
-    "marko-widgets": "^0.2.15-beta"
+    "marko": "^1.1.0",
+    "marko-widgets": "^0.2.15"
   }
 }

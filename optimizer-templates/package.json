@@ -12,14 +12,14 @@
     "async": "^0.9.0",
     "dustjs-linkedin": "^2.4.1",
     "handlebars": "^2.0.0",
-    "optimizer-dust": "^1.0.0-beta",
-    "optimizer-handlebars": "^1.0.0-beta",
-    "optimizer-marko": "^1.0.1-beta",
-    "marko": "^1.1.25-beta",
-    "view-engine": "^0.1.9-beta",
-    "view-engine-dust": "^0.1.7-beta",
-    "view-engine-handlebars": "^1.0.0-beta",
-    "view-engine-raptor": "^0.1.5-beta"
+    "optimizer-dust": "^1.0.0",
+    "optimizer-handlebars": "^1.0.0",
+    "optimizer-marko": "^1.0.1",
+    "marko": "^1.1.25",
+    "view-engine": "^0.1.9",
+    "view-engine-dust": "^0.1.7",
+    "view-engine-handlebars": "^1.0.0",
+    "view-engine-raptor": "^0.1.5"
   },
   "browser": {
     "./display-results.js": "./display-results-browser.js"

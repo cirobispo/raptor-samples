@@ -10,8 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^2.1.1",
-    "optimizer": "^1.0.1-beta",
-    "optimizer-less": "^1.0.1-beta",
-    "marko": "^1.1.25-beta"
+    "optimizer": "^1.0.1",
+    "optimizer-less": "^1.0.1",
+    "marko": "^1.1.25"
   }
 }

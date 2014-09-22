@@ -12,13 +12,13 @@
     "compression": "^1.1.0",
     "dustjs-linkedin": "^2.4.2",
     "express": "^4.9.0",
-    "optimizer": "^1.0.1-beta",
-    "optimizer-dust": "^1.0.2-beta",
-    "optimizer-less": "^1.0.1-beta",
-    "optimizer-marko": "^1.0.1-beta",
-    "marko": "^1.1.25-beta",
+    "optimizer": "^1.0.1",
+    "optimizer-dust": "^1.0.2",
+    "optimizer-less": "^1.0.1",
+    "optimizer-marko": "^1.0.1",
+    "marko": "^1.1.25",
     "serve-static": "^1.6.1",
-    "view-engine": "^0.1.9-beta",
-    "view-engine-dust": "^0.1.7-beta"
+    "view-engine": "^0.1.9",
+    "view-engine-dust": "^0.1.7"
   }
 }
