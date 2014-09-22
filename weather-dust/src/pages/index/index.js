@@ -3,7 +3,7 @@ var weatherService = require('../../services/weather');
 
 module.exports = function(req, res) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    
+
     var location = req.params.location || req.query.location;
 
     function weatherDataProvider(arg, callback) {
@@ -14,13 +14,11 @@ module.exports = function(req, res) {
             return;
         }
 
-        weatherService.getCurrentWeather({query: location}, callback);    
-        
+        weatherService.getCurrentWeather({query: location}, callback);
+
     }
 
-    template
-        .stream({
+    template.render({
             weatherDataProvider: weatherDataProvider
-        })
-        .pipe(res);
+        }, res);
 };
