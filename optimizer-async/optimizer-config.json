@@ -5,9 +5,9 @@
     ],
     "fileWriter": {
         "outputDir": "static",
-        "fingerprintsEnabled": true
+        "fingerprintsEnabled": false
     },
     "minify": false,
     "resolveCssUrls": true,
-    "bundlingEnabled": true
+    "bundlingEnabled": false
 }
