@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/raptorjs3/raptor-samples.git"
+    "url": "https://github.com/raptorjs/raptor-samples.git"
   },
   "author": "Patrick Steele-idem <pnidem@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raptorjs3/raptor-samples/issues"
+    "url": "https://github.com/raptorjs/raptor-samples/issues"
   },
-  "homepage": "https://github.com/raptorjs3/raptor-samples",
+  "homepage": "https://github.com/raptorjs/raptor-samples",
   "dependencies": {
     "async-config": "^1.0.0",
     "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",

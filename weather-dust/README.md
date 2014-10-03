@@ -4,18 +4,18 @@ Sample App: Weather (Dust)
 This sample app utilizes the following RaptorJS modules:
 
 * [dustjs-linkedin](https://github.com/linkedin/dustjs)
-* [raptor-args](https://github.com/raptorjs3/raptor-args)
-* [optimizer](https://github.com/raptorjs3/optimizer)
-* [raptor-renderer](https://github.com/raptorjs3/raptor-renderer)
-* [raptor-sample-ui-components](https://github.com/raptorjs3/raptor-sample-ui-components)
-* [marko-widgets](https://github.com/raptorjs3/marko-widgets)
+* [raptor-args](https://github.com/raptorjs/raptor-args)
+* [optimizer](https://github.com/raptorjs/optimizer)
+* [raptor-renderer](https://github.com/raptorjs/raptor-renderer)
+* [raptor-sample-ui-components](https://github.com/raptorjs/raptor-sample-ui-components)
+* [marko-widgets](https://github.com/raptorjs/marko-widgets)
 * [view-engine](https://github.com/patrick-steele-idem/view-engine)
 * [view-engine-dust](https://github.com/patrick-steele-idem/view-engine-dust)
 
 # Installation
 
 ```
-git clone https://github.com/raptorjs3/raptor-samples.git
+git clone https://github.com/raptorjs/raptor-samples.git
 cd raptor-samples/weather-dust
 npm install
 node server
@@ -91,11 +91,11 @@ Unlike with Marko, Dust requires that all helpers be explicitly registered befor
 
 Those modules register Dust helpers provided by the following modules:
 
-* [optimizer](https://github.com/raptorjs3/optimizer) (server-side only)
-* [marko-async](https://github.com/raptorjs3/marko-async)
-* [marko-layout](https://github.com/raptorjs3/marko-layout)
-* [marko-widgets](https://github.com/raptorjs3/marko-widgets)
-* [raptor-sample-ui-components](https://github.com/raptorjs3/raptor-sample-ui-components)
+* [optimizer](https://github.com/raptorjs/optimizer) (server-side only)
+* [marko-async](https://github.com/raptorjs/marko-async)
+* [marko-layout](https://github.com/raptorjs/marko-layout)
+* [marko-widgets](https://github.com/raptorjs/marko-widgets)
+* [raptor-sample-ui-components](https://github.com/raptorjs/raptor-sample-ui-components)
 
 In addition, helpers are also registered for all of the application's UI components using code similar to the following:
 
@@ -123,7 +123,7 @@ Similarly, a button UI component can be embedded using the following Dust code:
 {@sample-button type="submit" label="Go" id="go" variant="primary" /}
 ```
 
-The [sample-button](https://github.com/raptorjs3/raptor-sample-ui-components/tree/master/components/sample-button) UI component happens to use Marko to produce its HTML output, but since UI components encapsulate their rendering logic that does not matter.
+The [sample-button](https://github.com/raptorjs/raptor-sample-ui-components/tree/master/components/sample-button) UI component happens to use Marko to produce its HTML output, but since UI components encapsulate their rendering logic that does not matter.
 
 ## Resource Optimization
 

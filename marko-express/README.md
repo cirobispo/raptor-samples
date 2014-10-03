@@ -6,7 +6,7 @@ This sample app illustrates how to integrate Marko with a very basic Express app
 # Installation
 
 ```
-git clone https://github.com/raptorjs3/raptor-samples.git
+git clone https://github.com/raptorjs/raptor-samples.git
 cd raptor-samples/marko-express
 npm install
 node server

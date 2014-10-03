@@ -3,17 +3,17 @@ Sample App: Weather
 
 This sample app utilizes the following RaptorJS modules:
 
-* [optimizer](https://github.com/raptorjs3/optimizer): Used to generate optimized JavaScript and CSS bundles and generates the HTML markup to include them on the page.
-* [marko](https://github.com/raptorjs3/marko): HTML-based templating engine used to render pages and UI components on both the server.
+* [optimizer](https://github.com/raptorjs/optimizer): Used to generate optimized JavaScript and CSS bundles and generates the HTML markup to include them on the page.
+* [marko](https://github.com/raptorjs/marko): HTML-based templating engine used to render pages and UI components on both the server.
 * [async-config](https://github.com/patrick-steele-idem/async-config): Used to load environment-specific configuration required to configure the app.
-* [raptor-args](https://github.com/raptorjs3/raptor-args): Used to parse command-line arguments.
-* [marko-widgets](https://github.com/raptorjs3/marko-widgets): Provides automatic binding of client-side behavior to UI components rendered on either the server or the client.
-* [raptor-renderer](https://github.com/raptorjs3/raptor-renderer): A module for invoking an HTML renderer function and injecting the resulting HTML into the DOM with automatic binding of client-side behavior.
+* [raptor-args](https://github.com/raptorjs/raptor-args): Used to parse command-line arguments.
+* [marko-widgets](https://github.com/raptorjs/marko-widgets): Provides automatic binding of client-side behavior to UI components rendered on either the server or the client.
+* [raptor-renderer](https://github.com/raptorjs/raptor-renderer): A module for invoking an HTML renderer function and injecting the resulting HTML into the DOM with automatic binding of client-side behavior.
 
 # Installation
 
 ```
-git clone https://github.com/raptorjs3/raptor-samples.git
+git clone https://github.com/raptorjs/raptor-samples.git
 cd raptor-samples/weather
 npm install
 node server
