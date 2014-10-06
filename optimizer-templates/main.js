@@ -12,7 +12,7 @@ viewEngine.register('hbs', require('view-engine-handlebars'), {
 });
 
 // Load templates:
-var raptorTemplate = require('marko')
+var markoTemplate = require('marko')
     .load(require.resolve('./template.marko'));
 
 var handlebarsTemplate = require('view-engine')
@@ -28,7 +28,7 @@ var viewModel = {
 // Render templates:
 series([
         function renderMarko(callback) {
-            raptorTemplate.render(viewModel, callback);
+            markoTemplate.render(viewModel, callback);
         },
         function renderHandlebars(callback) {
             handlebarsTemplate.render(viewModel, callback);
