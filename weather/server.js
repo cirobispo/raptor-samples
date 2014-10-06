@@ -12,7 +12,7 @@ require('./config').onConfigured(function(err, config) {
     var port = config.port;
 
     app.use(compression()); // Enable gzip compression for all HTTP responses
-    app.use('/static', serveStatic(__dirname + '/static'));
+    app.use('/static', serveStatic(__dirname + '/static', config.serveStatic));
 
     require('./routes')(app);
 
