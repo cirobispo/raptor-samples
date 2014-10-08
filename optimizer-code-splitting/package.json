@@ -1,0 +1,19 @@
+{
+  "name": "optimizer-code-splitting",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.1.0",
+    "express": "^4.9.0",
+    "optimizer": "^1.0.1",
+    "marko": "^1.1.25",
+    "serve-static": "^1.6.1"
+  },
+  "main": "server.js"
+}
