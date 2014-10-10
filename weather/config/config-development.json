@@ -6,7 +6,7 @@
         "minify": false,
         "bundlingEnabled": false,
         "enabledExtensions": ["raptor-logging/browser", "development"],
-        "cacheProfile": "development",
+        "cacheProfile": "development"
     },
     "serveStatic": {
         "maxAge": 0
