@@ -10,7 +10,10 @@ config.load(function(err, config) {
     var app = express();
 
     optimizer.configure(config.get('optimizer'));
-    viewEngine.configure(config.get('view-engine'));
+    
+    viewEngine.register('dust', require('view-engine-dust'), {
+        dust: require('dustjs-linkedin')
+    });
 
     require('./src/dust-helpers').registerHelpers();
     require('./src/dust-helpers-server').registerHelpers();

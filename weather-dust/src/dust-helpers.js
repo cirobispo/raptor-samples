@@ -1,4 +1,5 @@
-var dust = require('view-engine-dust').dust;
+var dust = require('dustjs-linkedin');
+
 var raptorDust = require('raptor-dust');
 
 exports.registerHelpers = function() {

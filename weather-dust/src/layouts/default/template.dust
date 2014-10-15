@@ -26,7 +26,7 @@
     <div id="content">
         <main id="main">
             {@layout-placeholder name="body"  /}
-        </main>        
+        </main>
     </div>
 
     <footer id="footer">
@@ -34,6 +34,7 @@
     </footer>
 
     {@optimizer-body/}
+    {@init-widgets/}
 
     {@browser-refresh enabled="true" /}
 </body>

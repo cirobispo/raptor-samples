@@ -1,4 +1,4 @@
-var dust = require('view-engine-dust').dust;
+var dust = require('dustjs-linkedin');
 
 exports.registerHelpers = function() {
     require('optimizer/dust').registerHelpers(dust);

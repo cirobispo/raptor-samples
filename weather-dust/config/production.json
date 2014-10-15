@@ -1,15 +1,14 @@
 {
     "optimizer": {
-        "fileWriter": {
-            "fingerprintsEnabled": true
-        },
+        "fingerprintsEnabled": true,
         "minify": true,
         "bundlingEnabled": true,
+        "resolveCssUrls": true,
         "bundles": [
             {
                 "name": "jquery",
                 "dependencies": [
-                    "require jquery"
+                    "require: jquery"
                 ]
             }
         ]

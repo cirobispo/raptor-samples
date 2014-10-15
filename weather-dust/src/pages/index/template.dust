@@ -1,6 +1,6 @@
 {@optimizer-page name="index" packagePath="./optimizer.json" /}
 
-{@layout-use template="../../layouts/default-layout.dust"}
+{@layout-use template="../../layouts/default/template.dust"}
     {@layout-put into="title" value="Home" /}
     {@layout-put into="body"}
         <h2>Weather Forecast</h2>

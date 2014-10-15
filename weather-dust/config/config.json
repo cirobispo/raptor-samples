@@ -1,26 +1,16 @@
 {
     "port": 8081,
     "optimizer": {
-        "fileWriter": {
-            "url-prefix": "/static",
-            "outputDir": "static",
-            "fingerprintsEnabled": false
-        },
-
+        "urlPrefix": "/static",
+        "outputDir": "static",
+        "fingerprintsEnabled": false,
         "minify": false,
         "bundlingEnabled": false,
-        "transforms": [
-            "optimizer-resolve-css-urls"
+        "resolveCssUrls": true,
+        "plugins": [
+            "optimizer-less",
+            "optimizer-dust",
+            "optimizer-marko"
         ]
-    },
-    "view-engine": {
-        "engines": {
-            "view-engine-dust": {
-                "extensions": ["dust"]
-            },
-            "view-engine-marko": {
-                "extensions": ["marko"]
-            }
-        }
     }
 }
