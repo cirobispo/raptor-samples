@@ -1,10 +1,11 @@
 var dust = require('dustjs-linkedin');
 
 var raptorDust = require('raptor-dust');
+var viewEngine = require('view-engine');
 
 exports.registerHelpers = function() {
     require('marko-async/dust').registerHelpers(dust);
-    require('marko-layout/dust').registerHelpers(dust);
+    require('marko-layout/dust').registerHelpers(dust, viewEngine);
     require('marko-widgets/dust').registerHelpers(dust);
     require('raptor-sample-ui-components/dust').registerHelpers(dust);
     raptorDust.registerHelpers({
