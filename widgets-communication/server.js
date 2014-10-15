@@ -5,7 +5,10 @@ var serveStatic = require('serve-static');
 
 
 require('optimizer').configure({
-    bundlingEnabled: false
+    bundlingEnabled: false,
+    plugins: [
+        'optimizer-marko'
+    ]
 });
 
 var app = express();

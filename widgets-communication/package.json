@@ -17,14 +17,15 @@
   },
   "homepage": "https://github.com/raptorjs/raptor-samples",
   "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",
+    "browser-refresh-taglib": "^1.0.0",
     "express": "^4.4.1",
-    "optimizer": "^1.0.0",
-    "serve-static": "^1.2.1",
+    "jquery": "^2.1.1",
     "marko": "^1.1.0",
     "marko-widgets": "^1.0.0",
-    "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",
+    "optimizer": "^1.0.0",
+    "optimizer-marko": "^1.1.2",
     "raptor-sample-ui-components": "^1.0.0",
-    "browser-refresh-taglib": "1.0.0",
-    "jquery": "^2.1.1"
+    "serve-static": "^1.2.1"
   }
 }
