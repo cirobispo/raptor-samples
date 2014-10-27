@@ -1,13 +1,13 @@
 {
     "dependencies": [
-        "require jquery",
-        "../../global-style",
-        "../../components/app-weather",
-        "../../components/app-header",
-        "../../components/app-nav",
-        "../../components/app-footer",
-        "../../layouts/default",
+        "require: jquery",
+        "../../global-style/optimizer.json",
+        "../../components/app-weather/optimizer.json",
+        "../../components/app-header/optimizer.json",
+        "../../components/app-nav/optimizer.json",
+        "../../components/app-footer/optimizer.json",
+        "../../layouts/default/optimizer.json",
         "style.css",
-        "require raptor-sample-ui-components"
+        "require: raptor-sample-ui-components"
     ]
 }
