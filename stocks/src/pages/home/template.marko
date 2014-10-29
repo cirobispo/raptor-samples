@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Stocks | RaptorJS</title>
+
+    <optimizer-page package-path="./optimizer.json"/>
+
+    <optimizer-head/>
+</head>
+<body>
+    <div w-bind="./widget">
+        <form>
+            <input type="text" value="">
+            <button>
+                Add Symbol
+            </button>
+        </form>
+
+        <div id="tickers">
+            <stock-ticker
+                symbol="$symbol"
+                for="symbol in data.symbols"/>
+        </div>
+    </div>
+    <optimizer-body/>
+    <init-widgets/>
+    <browser-refresh/>
+</body>
+</html>
