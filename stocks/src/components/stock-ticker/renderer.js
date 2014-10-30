@@ -1,6 +1,5 @@
-var template = require('marko').load(require.resolve('./template.marko'));
-
 var stocksService = require('../../services/stocks-service');
+var template = require('marko').load(require.resolve('./template.marko'));
 
 module.exports = function render(input, out) {
 	out = out.beginAsync();
