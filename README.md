@@ -3,6 +3,7 @@ raptor-samples
 
 # Complete Apps
 
+* [stocks](https://github.com/raptorjs/raptor-samples/tree/master/stocks): Simple server app built using Marko, RaptorJS Optimizer and Express that also demonstrates rendering the same UI component on the server and client.
 * [weather](https://github.com/raptorjs/raptor-samples/tree/master/weather): Simple weather app built using RaptorJS modules (Marko templates)
 * [weather-dust](https://github.com/raptorjs/raptor-samples/tree/master/weather-dust): Simple weather app built using RaptorJS modules (Dust templates)
 
