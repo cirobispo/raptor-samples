@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/raptorjs/samples.git"
+    "url": "https://github.com/raptorjs/raptor-samples.git"
   },
   "author": "Patrick Steele-idem <pnidem@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raptorjs/samples/issues"
+    "url": "https://github.com/raptorjs/raptor-samples/issues"
   },
-  "homepage": "https://github.com/raptorjs/samples",
+  "homepage": "https://github.com/raptorjs/raptor-samples",
   "dependencies": {
     "express": "^4.9.4",
     "marko": "^1.0.0",
