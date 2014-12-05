@@ -3,10 +3,9 @@
     "plugins": [
         "optimizer-less"
     ],
-    "fileWriter": {
-        "outputDir": "static",
-        "fingerprintsEnabled": false
-    },
+    "outputDir": "static",
+    "fingerprintsEnabled": false,
+    "urlPrefix": "./static",
     "minify": false,
     "resolveCssUrls": true,
     "bundlingEnabled": false
