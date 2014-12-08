@@ -1,5 +1,5 @@
 {
-  "name": "optimizer-cli",
+  "name": "optimizer-cli-demo",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^2.1.1",
+    "optimizer-cli": "^1.1.8",
     "optimizer-less": "^1.0.1"
   }
 }
