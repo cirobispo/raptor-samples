@@ -31,6 +31,8 @@ optimizer style.less \
     --development
 ```
 
+Running the above command will result in JavaScript and CSS bundles being written out to the `./static` directory. In addition, the [my-page.html](https://github.com/raptorjs/raptor-samples/blob/master/optimizer-cli/my-page.html) file will be updated with the required `<script>` and `<link>` tags to include the required external resources. To test your program, open the updated `./my-page.html` file in your web browser.
+
 To run the sample app in production mode (minification enabled, concatenation enabled, etc.), use the following command:
 
 ```bash
@@ -40,3 +42,5 @@ optimizer style.less \
     --plugins optimizer-less \
     --production
 ```
+
+To test the production version of your program, open the updated `./my-page.html` file in your web browser.
