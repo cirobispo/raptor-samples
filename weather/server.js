@@ -2,6 +2,9 @@ var express = require('express');
 var compression = require('compression');
 var serveStatic = require('serve-static');
 
+require('marko/browser-refresh').enable();
+require('optimizer/browser-refresh').enable('*.marko *.css *.less');
+
 require('./config').onConfigured(function(err, config) {
     if (err) {
         throw err;
