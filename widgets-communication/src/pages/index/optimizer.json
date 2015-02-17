@@ -4,6 +4,6 @@
         "../../global-style",
         "require marko-widgets",
         "require ./widget",
-        "require raptor-sample-ui-components"
+        "require: marko-sample-components"
     ]
 }

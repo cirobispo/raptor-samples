@@ -25,7 +25,7 @@
     "marko-widgets": "^1.0.0",
     "optimizer": "^1.0.0",
     "optimizer-marko": "^1.1.2",
-    "raptor-sample-ui-components": "^1.0.0",
+    "marko-sample-components": "^1.0.0",
     "serve-static": "^1.2.1"
   }
 }

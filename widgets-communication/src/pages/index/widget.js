@@ -1,4 +1,4 @@
-var alert = require('raptor-sample-ui-components').alert;
+var alert = require('marko-sample-components').alert;
 
 function Widget(config) {
     var self = this;
@@ -20,7 +20,7 @@ Widget.prototype = {
     addAlert: function(text, alertType) {
         var targetEl = this.getEl('notification-container');
 
-        alert({
+        alert.render({
                 message: text,
                 dismissable: true,
                 type: alertType
