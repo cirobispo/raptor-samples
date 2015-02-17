@@ -1,7 +1,7 @@
 var template = require('marko').load(require.resolve('./template.marko'));
 var tempConv = require('temp-units-conv');
 
-module.exports = function render(data, context) {
+exports.render = function(data, out) {
 
     var weatherData = data.weatherData;
 
@@ -38,5 +38,5 @@ module.exports = function render(data, context) {
         precipitationType: precipitationType
     };
 
-    template.render(viewModel, context);
+    template.render(viewModel, out);
 };

@@ -1,6 +1,6 @@
 var template = require('marko').load(require.resolve('./template.marko'));
 
-module.exports = function render(data, context) {
+exports.render = function(data, out) {
     var weatherData = data.weatherData;
 
     var location = weatherData.location;
@@ -9,5 +9,5 @@ module.exports = function render(data, context) {
         weatherData: weatherData,
         location: location || weatherData.requestedLocation,
         invalidLocation: location == null
-    }, context);
+    }, out);
 };

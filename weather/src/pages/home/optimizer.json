@@ -8,6 +8,6 @@
         "../../components/app-footer/optimizer.json",
         "../../layouts/default/optimizer.json",
         "style.css",
-        "require: raptor-sample-ui-components"
+        "require: marko-sample-components"
     ]
 }
