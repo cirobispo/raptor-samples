@@ -2,8 +2,8 @@
     <if test="data.label">
         ${data.label}
     </if>
-    <else>
-        <invoke function="data.tag.invokeBody"/>
+    <else-if test="data.renderBody">
+        <invoke function="data.renderBody(out)"/>
     </else>
 
     <if test="data.isDropdown">

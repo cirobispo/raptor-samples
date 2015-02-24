@@ -14,9 +14,9 @@ exports.tag = {
 };
 
 module.exports = function render(input, context) {
-    
+
     var rootAttrs = {};
-                    
+
     var classParts = ["btn"];
 
     var type = 'button';
@@ -25,15 +25,15 @@ module.exports = function render(input, context) {
         type = 'link';
         input.variant = "link";
     }
-    
-    if (input.variant) {                    
+
+    if (input.variant) {
         classParts.push("btn-" + input.variant);
     }
-    
-    if (input.size) {                    
+
+    if (input.size) {
         classParts.push("btn-" + input.size);
     }
-    
+
     var splatAttrs = input['*'];
     if (splatAttrs) {
         var className = splatAttrs["class"];
@@ -48,17 +48,16 @@ module.exports = function render(input, context) {
             }
         }
     }
-    
+
     rootAttrs["class"] = classParts.join(" ");
 
     template.render({
         type: type,
-        tag: input, 
-        label: input.label,
+        tag: input,
+        renderBody: input.renderBody,
         rootAttrs: rootAttrs,
         isDropdown: input.dropdown === true,
         href: input.href
     }, context);
 };
 
-     
