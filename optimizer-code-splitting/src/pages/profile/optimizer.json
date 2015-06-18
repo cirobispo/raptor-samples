@@ -1,7 +1,0 @@
-{
-    "dependencies": [
-        "../../common/optimizer.json",
-        "style.css",
-        "client.js"
-    ]
-}
